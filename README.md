@@ -1,16 +1,17 @@
-### Hi there 👋
+# Hey, I'm Felipe 👋
 
-<!--
-**FelipeLahti/FelipeLahti** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Staff Software Engineer at [WithClutch](https://www.withclutch.com) based in Porto Alegre, Brazil 🇧🇷
 
-Here are some ideas to get you started:
+I've been building software since 2008 — from distributed systems and backend infrastructure to frontend experiences. I enjoy working across the full stack, providing technical leadership, and digging into hard problems.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## What I'm up to
+
+- Building the digital origination platform at **[WithClutch](https://www.withclutch.com)** — powering loan and account opening for 150+ credit unions
+- Exploring AI-assisted development with coding agents
+
+
+## Let's connect
+
+- **Company:** [withclutch.com](https://www.withclutch.com)
+- **GitHub:** [FelipeLahti](https://github.com/FelipeLahti)
+- **LinkedIn:** [flahti](https://www.linkedin.com/in/flahti/)

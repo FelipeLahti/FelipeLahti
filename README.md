@@ -13,7 +13,7 @@ I've been building software since 2008 — from distributed systems and backend 
 
 ![GitHub Metrics](github-metrics.svg)
 
-![Streak Stats](streak-stats.svg)
+![Streak Stats](https://streak-stats.demolab.com?user=FelipeLahti&theme=default)
 
 ![Top Languages](languages.svg)
 

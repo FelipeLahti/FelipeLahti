@@ -88,11 +88,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   contrib-3d:
+    needs: [metrics]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - run: git pull origin main
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
@@ -102,35 +107,39 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A profile-3d-contrib/
-          git diff --staged --quiet || git commit -m "Update 3D contribution graph" && git push
+          git diff --staged --quiet || (git commit -m "Update 3D contribution graph" && git push)
 
   summary-cards:
+    needs: [contrib-3d]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - run: git pull origin main
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: FelipeLahti
           BRANCH_NAME: main
           UTC_OFFSET: -3
-      - name: Commit summary cards
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A profile-summary-card-output/
-          git diff --staged --quiet || git commit -m "Update profile summary cards" && git push
 
   pacman:
+    needs: [summary-cards]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: abozanona/pacman-contribution-graph@v2.3.0
+        with:
+          ref: main
+          fetch-depth: 0
+      - run: git pull origin main
+      - uses: abozanona/pacman-contribution-graph@2.3.0
         with:
           github_user_name: FelipeLahti
           github_token: ${{ secrets.METRICS_TOKEN }}
@@ -143,4 +152,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add pacman/
-          git diff --staged --quiet || git commit -m "Update pacman contribution graph" && git push
+          git diff --staged --quiet || (git commit -m "Update pacman contribution graph" && git push)

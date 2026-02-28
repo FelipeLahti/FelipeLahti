@@ -13,6 +13,18 @@ I've been building software since 2008 — from distributed systems and backend 
 
 ![GitHub Metrics](github-metrics.svg)
 
+![Streak Stats](streak-stats.svg)
+
+![Top Languages](languages.svg)
+
+### 3D Contribution Graph
+
+![3D Contributions](profile-3d-contrib/profile-night-rainbow.svg)
+
+### Contribution Snake
+
+![Snake animation](https://raw.githubusercontent.com/FelipeLahti/FelipeLahti/output/github-snake-dark.svg)
+
 ## Let's connect
 
 - **Company:** [withclutch.com](https://www.withclutch.com)

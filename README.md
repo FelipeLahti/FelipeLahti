@@ -7,7 +7,7 @@ I've been building software since 2008 — from distributed systems and backend 
 ## What I'm up to
 
 - Building the digital origination platform at **[WithClutch](https://www.withclutch.com)** — powering loan and account opening for 150+ credit unions
-- Exploring AI-assisted development with coding agents
+- Addicted to [Claude Code](https://claude.ai/claude-code) — 5x+ more productive since Opus 4.5+
 
 
 ## Let's connect

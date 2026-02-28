@@ -11,7 +11,7 @@ I've been building software since 2008 — from distributed systems and backend 
 
 ## GitHub Stats
 
-![Felipe's GitHub stats](https://github-readme-stats-sage-iota-33.vercel.app/api?username=FelipeLahti&show_icons=true&include_all_commits=true&count_private=true&theme=default)
+![GitHub Metrics](github-metrics.svg)
 
 ## Let's connect
 
